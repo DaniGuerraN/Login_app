@@ -160,11 +160,6 @@ class LoginButton extends StatelessWidget {
                 '","password": "' +
                 passFieldLoginController.text +
                 '" }';
-            if (passFieldLoginController.text == '') {
-              data = '{ "email": "' +
-                  textFieldLoginController.text +
-                  '" }';
-            }
             Api.login(data).then((sucess) {
               if (sucess) {
                 Navigator.push(context,
