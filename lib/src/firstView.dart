@@ -22,7 +22,10 @@ class MyLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+        body: SingleChildScrollView(
+            child: ConstrainedBox(
+      constraints: BoxConstraints(),
+      child: Container(
         padding: EdgeInsets.fromLTRB(30, 50, 20, 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -90,7 +93,7 @@ class MyLogin extends StatelessWidget {
           ],
         ),
       ),
-    );
+    )));
   }
 }
 
